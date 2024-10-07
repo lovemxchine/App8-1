@@ -4,7 +4,7 @@ const cors = require('cors')
 const port = 8000
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
-app.use(express.static('public'),cors())
+app.use(express.static('public'))
 
 
 app.post('/api/form-post',(req,res) => {

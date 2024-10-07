@@ -9,7 +9,7 @@ export default function FormPost(){
         
         const formData = new FormData(refs.current)
         const formEnt = Object.fromEntries(formData.entries())
-        fetch('http://localhost:8000/api/form-post',
+        fetch('/api/form-post',
             {
                 method:'POST',
                 body:JSON.stringify(formEnt),
